@@ -1,4 +1,3 @@
-````markdown
 # Resilience Models
 
 This is a Python library to help analyze community resilience to disasters. It includes two main models: the **Resilience Triangle Model** and the **Area Under the Curve (AUC) Model**.
@@ -48,4 +47,3 @@ Check the Python files themselves for more details on specific functions and the
 ## License
 
 (No License Yet :)
-````
