@@ -3,3 +3,7 @@ pandas
 matplotlib
 seaborn
 numpy
+networkx
+geopandas
+contextily
+scipy

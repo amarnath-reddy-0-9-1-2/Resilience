@@ -13,7 +13,7 @@ def run_batch_processing():
     all_cbgs = list(df['destination_cbg'].unique())
     print("Total no. of cbgs - ", len(all_cbgs))
 
-    all_cbg_resilience = {"CBG": [], "Resilience": [], "Robustuness": [], "Vulnerability": [], "Status": []}
+    all_cbg_resilience = {"CBG": [], "Resilience": [], "Robustness": [], "Vulnerability": [], "Status": []}
 
     special_count = 0
 
@@ -27,7 +27,7 @@ def run_batch_processing():
             special_count += 1
         all_cbg_resilience["CBG"].append(cbg)
         all_cbg_resilience["Resilience"].append(log_metrics["resilience"])
-        all_cbg_resilience["Robustuness"].append(log_metrics["robustness"])
+        all_cbg_resilience["Robustness"].append(log_metrics["robustness"])
         all_cbg_resilience["Vulnerability"].append(log_metrics["vulnerability"])
         all_cbg_resilience["Status"].append(log_metrics["recovery_status"])
 
