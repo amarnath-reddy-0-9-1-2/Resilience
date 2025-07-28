@@ -1,49 +1,55 @@
-# Resilience Models
+# Community Resilience Analysis Library
 
-This is a Python library to help analyze community resilience to disasters. It includes two main models: the **Resilience Triangle Model** and the **Area Under the Curve (AUC) Model**.
+A Python library for analyzing community resilience to disasters using the **Resilience Triangle Model** and **Area Under the Curve (AUC) Model**. This toolset provides robust methods to quantify and visualize recovery patterns from mobility data.
+
+## Features
+
+- **Data Preparation**: Load and preprocess mobility data for resilience analysis.
+- **Resilience Metrics**: Calculate recovery metrics post-disaster, including speed and extent of recovery.
+- **Visualization**: Generate insightful graphs to illustrate resilience patterns.
+- **Batch Processing**: Analyze multiple areas and export results to CSV for comprehensive studies.
 
 ## Installation
 
-1.  **Clone this repository**:
-    ```bash
-    git clone <this_repo_url>
-    ```
-2.  **Install the necessary libraries**:
-    ```bash
-    pip install -r requirements.txt
-    ```
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/amarnath-reddy-0-9-1-2/Resilience.git
+   cd Resilience
+   ```
+
+2. **Install Dependencies**:
+   Ensure you have Python 3.8+ installed, then run:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Quick Start
 
-1.  **Place your data**: Make sure your `portarthur_sd_df_2019.rdata` file path is set correctly where ever needed.
+1. **Prepare Your Data**:
+   - Place your `portarthur_sd_df_2019.rdata` file in the appropriate directory.
+   - Update the file path in the scripts or configuration as needed.
 
-2.  **Run an example**: I've included some example scripts to show you how it works. You can find them in the `examples/` directory.
+2. **Run Example Scripts**:
+   Example scripts are located in the `examples/` directory. Use them to explore the library’s capabilities:
 
-    * To see the **Resilience Triangle Model** in action for a specific area:
-        ```bash
-        python examples/example_triangle_usage.py
-        ```
-    * To see the **Area Under the Curve (AUC) Model** in action for a specific area:
-        ```bash
-        python examples/example_auc_usage.py
-        ```
-    * To process **all areas** and save results to a CSV (using the Triangle model):
-        ```bash
-        python examples/example_batch_processing.py
-        ```
+   - **Resilience Triangle Model**:
+     ```bash
+     python examples/run_triangle_example.py
+     ```
+     Demonstrates the Resilience Triangle Model for a single area.
 
-## What it Does
+   - **Area Under the Curve (AUC) Model**:
+     ```bash
+     python examples/run_auc_example.py
+     ```
+     Shows the AUC Model for a single area.
 
-This library helps you:
+   - **Batch Processing**:
+     ```bash
+     python examples/batch_processing.py
+     ```
+     Processes all areas using the Triangle Model and saves results to a CSV file.
 
-* **Load and prepare** your mobility data.
-* **Calculate resilience metrics** after a disaster, telling you how quickly an area recovers.
-* **Visualize** these resilience patterns with graphs.
-
-## Need to Know More?
-
-Check the Python files themselves for more details on specific functions and their parameters.
-
-## License
-
-(No License Yet :)
+## Author
+- **Amarnath Reddy Kalluru**
+- Email: [amarnathreddykalluru@gmail.com](mailto:amarnathreddykalluru@gmail.com)
