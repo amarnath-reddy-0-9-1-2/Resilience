@@ -38,7 +38,7 @@ def run_batch_processing():
     resilience_df = pd.DataFrame(all_cbg_resilience)
     resilience_df.to_csv("cbg_resilience_summary.csv", index=False)
 
-    data = pd.read_csv('../cbg_resilience_summary.csv')
+    data = pd.read_csv('cbg_resilience_summary.csv')
     new_data = data[data["Status"] != "No Trend Shown"]
     new_data.to_csv('cbg_resilience_summary_filtered.csv', index=False)
 
