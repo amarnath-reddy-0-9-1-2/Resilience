@@ -110,19 +110,16 @@ def calculate_systematic_impact_point(df_normalized: pd.DataFrame, baseline: flo
     
     in_recovery_df = df_normalized[(df_normalized["date"] >= t0) & (df_normalized["date"] <= t1)]
 
-    if in_recovery_df.empty:
-        raise Exception("No data points found between t0 and t1.")
-
     tD_value = in_recovery_df["in_degree"].min()
 
     if tD_value >= baseline:
-        raise Exception("The mobility never went down the baseline. Abnormal pattern.")
+        raise Exception("The mobility never went down the baseline during disaster. Abnormal pattern.")
 
     tD = in_recovery_df[in_recovery_df["in_degree"] == tD_value]["date"].iloc[0]
     tD = pd.to_datetime(tD)
 
     if tD == t0:
-        raise Exception("The mobility went up during the disaster. Abnormal pattern")
+        raise Exception("The mobility went up during disaster. Abnormal pattern")
     
     return tD, tD_value
 

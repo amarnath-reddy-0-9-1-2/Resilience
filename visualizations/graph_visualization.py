@@ -1,5 +1,3 @@
-# resilience_models/graph_visualization.py
-
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
