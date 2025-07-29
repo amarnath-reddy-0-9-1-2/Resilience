@@ -1,4 +1,4 @@
-from visualizations.log_visualizations import log_summary_triangle
+from visualizations.log_visualization import log_summary_triangle
 from visualizations.graph_visualization import plot_resilience_graph_triangle
 from data_processing import *
 from models.resilience_triangle import calculate_resilience_triangle_metrics

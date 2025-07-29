@@ -2,7 +2,7 @@ import pandas as pd
 from data_processing import *
 from models.resilience_auc import *
 from visualizations.graph_visualization import plot_resilience_graph_auc
-from visualizations.log_visualizations import log_summary_auc
+from visualizations.log_visualization import log_summary_auc
 
 
 def run_auc_example():
